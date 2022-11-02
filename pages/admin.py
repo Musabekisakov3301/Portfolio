@@ -10,4 +10,4 @@ admin.site.register(models.PageText)
 admin.site.register(models.Welcome)
 admin.site.register(models.Summary)
 admin.site.register(models.Skils)
-
+admin.site.register(models.Photo)

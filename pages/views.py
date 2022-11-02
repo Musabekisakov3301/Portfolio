@@ -12,7 +12,10 @@ def PagesListView(request):
     summarys = Summary.objects.all()
     contacts = Contact.objects.all()
     animations = Animation.objects.all()
-    photos = Photo.objects.all()
+    photos = Photo.objects.all()[0:1]
+    images = Photo.objects.all()[1:2]
+    icon_images = Photo.objects.all()[2:3] 
+    project_images = Photo.objects.all()[3:4]
 
     
     context = {
@@ -21,6 +24,9 @@ def PagesListView(request):
         'contacts':contacts,
         'animations':animations,
         'photos':photos, 
+        'images':images,
+        'icon_images':icon_images,
+        'project_images':project_images,
         
     }
     
